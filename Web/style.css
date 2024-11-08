@@ -6,45 +6,56 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
     line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
     background-color: #4CAF50;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+    color: white;
 }
 
-header h1 {
-    margin: 0;
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-nav ul {
+header nav ul {
     list-style: none;
-    padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-left: 15px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-section {
-    padding: 20px;
-    margin: 20px 0;
+main {
+    padding: 2rem;
 }
 
-.course {
-    background-color: #f4f4f4;
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.tagline {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.vision {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
 }
