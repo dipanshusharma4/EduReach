@@ -10,7 +10,7 @@ class Browser(QMainWindow):
         self.browser = QWebEngineView()
         self.browser.setUrl(QUrl("https://unrivaled-buttercream-25b45b.netlify.app/"))
 
-        self.setWindowTitle("EduReach")
+        self.setWindowTitle("EduReach - Education Everywhere")
         self.setWindowIcon(QIcon("favicon.ico")) 
         self.setCentralWidget(self.browser)
 
