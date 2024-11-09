@@ -1,4 +1,5 @@
 from tkinter import *
+
 root=Tk()
 root.title("EduReach")
 root.geometry("900x600")
@@ -166,8 +167,40 @@ def content():
     frame_2.grid_forget()
     home_button.grid_forget()
     
-    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=dashboard,bd=5)
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
     home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    class_1_c=Button(frame_2,text="Class 1",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_content)
+    class_2_c=Button(frame_2,text="Class 2",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_2_content)
+    class_3_c=Button(frame_2,text="Class 3",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_3_content)
+    class_4_c=Button(frame_2,text="Class 4",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_4_content)
+    class_5_c=Button(frame_2,text="Class 5",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_5_content)
+    class_6_c=Button(frame_2,text="Class 6",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_6_content)
+    class_7_c=Button(frame_2,text="Class 7",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_7_content)
+    class_8_c=Button(frame_2,text="Class 8",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_8_content)
+    class_9_c=Button(frame_2,text="Class 9",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_9_content)
+    class_10_c=Button(frame_2,text="Class 10",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_10_content)
+    class_11_c=Button(frame_2,text="Class 11",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_11_content)
+    class_12_c=Button(frame_2,text="Class 12",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_12_content)
+
+    class_1_c.grid(row=0,column=0)
+    class_2_c.grid(row=0,column=1)
+    class_3_c.grid(row=0,column=2)
+    class_4_c.grid(row=1,column=0)
+    class_5_c.grid(row=1,column=1)
+    class_6_c.grid(row=1,column=2)
+    class_7_c.grid(row=2,column=0)
+    class_8_c.grid(row=2,column=1)
+    class_9_c.grid(row=2,column=2)
+    class_10_c.grid(row=3,column=0)
+    class_11_c.grid(row=3,column=1)
+    class_12_c.grid(row=3,column=2)
+    
+
+
 
 def chatting():
     global home_button
@@ -178,6 +211,1074 @@ def chatting():
     
     home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=dashboard,bd=5)
     home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_1_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_1_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_1_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_1_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_1_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_1_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_1_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_1_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_1_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_1_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_1_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_1_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_1_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_2_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_2_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_2_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_2_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_2_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_2_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_2_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_2_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_2_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_2_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_2_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_2_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_2_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_3_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_3_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_3_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_3_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_3_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_3_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_3_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_3_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_3_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_3_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_3_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_3_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_3_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_4_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_4_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_4_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_4_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_4_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_4_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_4_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_4_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_4_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_4_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_4_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_4_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_4_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_5_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_5_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_5_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_5_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_5_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_5_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_5_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_5_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_5_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_5_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_5_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_5_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_5_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_6_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_6_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_6_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_6_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_6_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_6_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_6_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_6_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_6_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_6_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_6_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_6_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_6_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_7_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_7_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_7_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_7_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_7_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_7_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_7_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_7_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_7_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_7_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_7_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_7_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_7_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_8_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_8_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_8_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_8_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_8_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_8_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_8_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_8_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_8_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_8_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_8_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_8_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_8_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_9_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_9_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_9_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_9_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_9_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_9_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_9_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_9_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_9_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_9_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_9_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_9_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_9_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_10_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_10_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_10_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_10_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_10_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_10_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_10_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_10_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_10_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_10_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_10_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_10_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_10_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_11_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_11_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_11_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_11_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_11_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_11_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_11_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_11_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_11_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_11_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_11_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_11_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_11_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_12_content():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+    frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
+    frame_2.grid(row=1,column=0,columnspan=3,padx=5,pady=5)
+
+    english_button=Button(frame_2,text="English",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_English)
+    maths_button=Button(frame_2,text="Maths",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Maths)
+    science_button=Button(frame_2,text="Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Science)
+    hindi_button=Button(frame_2,text="Hindi",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Hindi)
+    urdu_button=Button(frame_2,text="Urdu",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Urdu)
+    social_science_button=Button(frame_2,text="Social Science",padx=10,pady=10,fg="red",font="calibri 20 bold",bd=5,command=class_1_sub_Social_Sciecne)
+
+    english_button.grid(row=0,column=0)
+    maths_button.grid(row=0,column=1)
+    science_button.grid(row=1,column=0)
+    urdu_button.grid(row=1,column=1)
+    hindi_button.grid(row=2,column=0)
+    social_science_button.grid(row=2,column=1)
+
+def class_12_sub_English():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_12_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+
+def class_12_sub_Maths():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_12_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_12_sub_Science():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_12_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_12_sub_Urdu():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_12_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_12_sub_Hindi():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_12_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
+def class_12_sub_Social_Sciecne():
+    global home_button
+    global frame_2
+
+    frame_2.grid_forget()
+    home_button.grid_forget()
+    
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=class_12_content,bd=5)
+    home_button.grid(row=4,column=0,padx=5,pady=5)
+
 
 home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",state=DISABLED,bd=5)
 home_button.grid(row=4,column=0,padx=5,pady=5)
