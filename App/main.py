@@ -167,7 +167,7 @@ def content():
     frame_2.grid_forget()
     home_button.grid_forget()
     
-    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=content,bd=5)
+    home_button=Button(root,text="Back",fg="red",font="calibri 20 bold",command=dashboard,bd=5)
     home_button.grid(row=4,column=0,padx=5,pady=5)
 
     frame_2=LabelFrame(root,padx=97,pady=10,bd=5)
